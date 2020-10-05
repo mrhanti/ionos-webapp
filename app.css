@@ -1,0 +1,58 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#app-root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.i-dropzone {
+  height: 200px;
+  background-color: rgb(15, 228, 164);
+}
+
+.i-actions {
+  background-color: blue;
+  padding: 1em;
+}
+
+.i-canvas {
+  flex: 1;
+  background-color: aliceblue;
+  padding: 1em;
+}
+
+.i-container {
+  width: 200px;
+  min-height: 200px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  will-change: transform, left, top;
+  contain: layout;
+  cursor: move;
+  z-index: 9;
+  border: 5px solid aqua;
+}
+
+.i-node {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  position: absolute;
+  will-change: transform, left, top;
+  contain: layout;
+  cursor: move;
+  z-index: 10;
+}
+
+.i-draggable-in {
+  position: relative;
+}
